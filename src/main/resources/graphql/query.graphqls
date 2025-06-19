@@ -1,0 +1,9 @@
+# Định nghĩa các truy vấn (Queries)
+type Query {
+    allBooks: [Book!]!
+    bookById(id: ID!): Book
+    allAuthors: [Author!]!
+    authorById(id: ID!): Author
+
+    getCurrentUser: UserDto!
+}

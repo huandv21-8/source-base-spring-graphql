@@ -1,0 +1,14 @@
+# Định nghĩa kiểu dữ liệu cho một sách
+type Book {
+    id: ID!
+    title: String!
+    author: Author!
+}
+
+# Định nghĩa kiểu dữ liệu cho một tác giả
+type Author {
+    id: ID!
+    firstName: String!
+    lastName: String!
+    books: [Book!]
+}

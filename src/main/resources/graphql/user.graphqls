@@ -1,0 +1,28 @@
+type UserDto {
+    id: ID!
+    username: String!
+    role: String!
+    email: String!
+}
+
+input UserInput {
+    username: String!
+    password: String!
+    email: String!
+    roleId: Int!
+}
+
+type AuthPayload {
+    token: String!
+    user: UserDto!
+}
+
+# Định nghĩa các truy vấn (Queries) liên quan đến người dùng
+#type UserQueries {
+#    getCurrentUser: [UserDto!]!
+#}
+
+#type AuthResolver {
+#    register(user: UserInput!): AuthPayload
+#    login(email: String!, password: String!): AuthPayload!
+#}

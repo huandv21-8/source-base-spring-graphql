@@ -1,0 +1,8 @@
+# Định nghĩa các thay đổi dữ liệu (Mutations)
+type Mutation {
+    newBook(title: String!, authorId: ID!): Book!
+    newAuthor(firstName: String!, lastName: String!): Author!
+
+    register(user: UserInput!): AuthPayload
+    login(email: String!, password: String!): AuthPayload!
+}
